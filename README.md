@@ -83,6 +83,7 @@ By selecting OK, the macro will ask for the specific file to process (or the inp
 <img width="281" height="312" alt="image" src="https://github.com/user-attachments/assets/e980768c-bbd3-41e9-ad53-db994cee8983" />
 
 
+
 Input Files
 Type: Multi-channel images within a container or saved as TIFF stacks (e.g., *.tif).
 
