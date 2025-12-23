@@ -84,7 +84,7 @@ By selecting OK, the macro will ask for the specific file to process (or the inp
 
 
 Input Files
-Type: Multi-channel images saved as TIFF stacks (e.g., *.tif).
+Type: Multi-channel images within a container or saved as TIFF stacks (e.g., *.tif).
 
 Format: Must be a 4-channel image stack.
 
@@ -97,22 +97,20 @@ Channel 3: Target Marker 2.
 Channel 4: Target Marker 3.
 
 Output Files
-Expression_Results.csv: A comprehensive table containing the per-cell measurements.
+Results_ALL-[condition].txt: A comprehensive tab-separated text file containing the measurements.
 
-Columns include: Image Name, ROI ID, Area, Mean Intensity (C2), Mean Intensity (C3), Mean Intensity (C4), Integrated Density, etc.
+Columns include: Label (image name), Condition (specified by the user), Total selected Area, each marker's positive area, each markers's area ratio (marker's area / total area), each marker's mean intensity, for every selected combination of double positive areas: area ratio and mean intensity.
 
-QC_segmentation_ImageName.tif: (Optional) The original image with the successfully segmented ROIs overlaid for quality control purposes.
+Segmentation_ImageName.tif: (Optional) Overlay of the three markers 32-bit thresholded images, saved as a single .tif file.
 
 <h2>Examples</h2>
 Requirements
 ImageJ Version: 1.53n or later (Fiji is highly recommended).
 
-Memory: Recommended 8GB of RAM allocated to ImageJ for batch processing high-resolution images (Edit > Options > Memory & Threads...).
-
 <h2>License</h2>
-This project is licensed under the MIT License - see the file for details.
+This project is licensed under the GPL-3.0 License - see the file for details.
 
 <h2>Contact and Support</h2>
-Author: Your Name/GitHub Handle
+Author: Dr. Ioannis Alexopoulos / jalexop
 
 Reporting Issues: Please use the Issues tab on this GitHub repository to report bugs or suggest enhancements.
